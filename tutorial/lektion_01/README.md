@@ -38,9 +38,6 @@ Im Order `js/` legen wir alle Dateien ab, in denen wir mit Javascript die Progra
 
 Im Root-Ordner jeder Lektion liegt die `index.html`. Das ist der Einstieg in unser Spiel, das der Benutzer später im Browser öffnet. In dieser Datei ist mittels HTML beschrieben, welche Elemente wir auf unserer Startseite des Spiels anzeigen wollen. Darunter fallen zum Beispiel die Spielfläche selbst, aber auch informative Texte zum Spiel oder die Anzeige der aktuellen Punktzahl und Leben des Spielers während des Spiels.
 
-## Das Webseite öffnen
+## Die Webseite öffnen
 
-
-
-
-
+Um eine Webseite im Browser anzuzeigen, benötigen wir einen sogenannten Webserver. Ich empfehle euch im Folgenden 2 Optionen, um die Lektionen dieses Tutorials im Browser zu öffnen und gleichzeitig euren eigenen Code schreiben zu können. Die erste Variante basiert auf der Plattform [Glitch](https://glitch.com/) und läuft vollständig in der Cloud. Das bedeutet, ihr müsst keine Software auf eurem Rechner installieren und könnt direkt loslegen. Wenn ihr lieber eine lokale Entwicklung bevorzugt, empfehle ich euch die Installation von [Visual Studio Code](https://code.visualstudio.com/) und die Verwendung der [Live-Server Erweiterung](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
