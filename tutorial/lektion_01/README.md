@@ -40,4 +40,16 @@ Im Root-Ordner jeder Lektion liegt die `index.html`. Das ist der Einstieg in uns
 
 ## Die Webseite öffnen
 
-Um eine Webseite im Browser anzuzeigen, benötigen wir einen sogenannten Webserver. Ich empfehle euch im Folgenden 2 Optionen, um die Lektionen dieses Tutorials im Browser zu öffnen und gleichzeitig euren eigenen Code schreiben zu können. Die erste Variante basiert auf der Plattform [Glitch](https://glitch.com/) und läuft vollständig in der Cloud. Das bedeutet, ihr müsst keine Software auf eurem Rechner installieren und könnt direkt loslegen. Wenn ihr lieber eine lokale Entwicklung bevorzugt, empfehle ich euch die Installation von [Visual Studio Code](https://code.visualstudio.com/) und die Verwendung der [Live-Server Erweiterung](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+Um eine Webseite im Browser anzuzeigen, benötigen wir einen sogenannten Webserver. Ich empfehle euch im Folgenden 2 Optionen, um die Lektionen dieses Tutorials im Browser zu öffnen und gleichzeitig euren eigenen Code schreiben zu können. Die erste Variante basiert auf der Plattform [Glitch](https://glitch.com/) und läuft vollständig in der Cloud. Das bedeutet, ihr müsst keine Software auf eurem Rechner installieren und könnt direkt loslegen. Wenn ihr eine lokale Entwicklung bevorzugt, empfehle ich euch die Installation von [Visual Studio Code](https://code.visualstudio.com/) und die Verwendung der [Live-Server Erweiterung](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
+### Glitch
+
+Ihr könnt euch einen kostenlosen Glitch-Account erstellen und gleich loslegen. Sobald ihr bei Glitch angemeldet seid erzeugt ihr einfach ein neues Projekt über den "New Project" Button in der oberen rechten Ecke. Dort wählt ihr ganz unten "Import from Github" aus. Es öffnet sich ein Fenster-Popup, in dem nach der URL eures Git-Repositories gefragt wird. Diese bekommt ihr direkt von der Github-Webseite dieses Tutorials. Um es einfach zu machen habe ich die URL für euch kopiert. Fügt den folgenden Wert in das Eingabefeld ein:
+
+```
+https://github.com/winf-hsos/learn-coding-with-pacman.git
+```
+
+Klickt anschließend auf "OK" und die Dateien für dieses Tutorial werden mit allen Lektionen in eurer neues Glitch-Projekt importiert.
+
+![Ein Projekt in Glitch aus Github importieren](../../resources/images/glitch_import_from_github.gif)
