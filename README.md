@@ -15,3 +15,8 @@ Die Entwicklung eines Spiels von Beginn an ist ein gutes Projekt für das Erlern
 ### Warum Javascript?
 
 Für Neueinsteiger in die Programmierung spielt die verwendte Sprache keine Rolle. Um die Logik der Programmierung kennenzulernen ist sogar sinnvoll, mit einer Pseudo-Programmiersprache zu beginnen (z.B. mit dem [Karel Roboter](https://github.com/fredoverflow/karel)).
+
+# Die Lektionen
+
+- [Lektion 1: Das Projekt aufsetzen](tutorial/lektion_01/README.md)
+- [Lektion 2: Die Zeichenfläche für unser Spiel erstellen](tutorial/lektion_02/README.md)
