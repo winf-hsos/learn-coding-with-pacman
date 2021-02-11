@@ -53,3 +53,7 @@ https://github.com/winf-hsos/learn-coding-with-pacman.git
 Klickt anschließend auf "OK" und die Dateien für dieses Tutorial werden mit allen Lektionen in eurer neues Glitch-Projekt importiert.
 
 ![Ein Projekt in Glitch aus Github importieren](../../resources/images/glitch_import_from_github.gif)
+
+Nach dem Import befindet ihr euch in der Projektansicht. Auf der linken Seite seht ihr die Verzeichnisse und Dateien in eurem Projekt. In der Mitte befindet sich der Code-Editor, in dem ihr Dateien öffnen und bearbeiten könnt. Um das Ergebnis einer bestimmten Lektion zu sehen klickt ihr auf den "Show"-Button und wählt "Next to The Code". Es öffnet sich ein weiterer Bereich am rechten Rand des Bildschirms, in dem eine Vorschau einer HTML-Datei angezeigt werden kann. Um die Vorschau für Lektion 1 zu sehen, müsst ihr euch zunächst durch die Ordnerstruktur klicken. Sobald ihr im Ordner `tutorials/lektion_01` seid, sollte eine Verschau der `index.html`, die sich in diesem Ordner befindet, angezeigt werden.
+
+![Eine Webseite in Glitch anzeigen](../../resources/images/glitch_preview_website.gif)
