@@ -1,8 +1,8 @@
 # Programmieren lernen am Beispiel von Pacman
 
-![](resources/images/pacman_game.png)
-
 > Wenn du nur einen neuen Skill erlernen kannst, entscheide dich für das Programmieren. Damit hast du die Fähigkeit, einer Maschine alles andere beizubringen.
+
+![](resources/images/pacman_game.png)
 
 ## Ziele
 
@@ -12,8 +12,6 @@ Dies ist ein Online-Tutorial für Einsteiger in die Programmierung am Beispiel v
 
 Die Entwicklung eines Spiels von Beginn an ist ein gutes Projekt für das Erlernen der Programmierung. Zum einen haben wir ein klares Ziel vor Augen und wissen, wie das Ergebnis am Ende aussehen soll. Das hilft zur Erhöhung der Motivation, die wiederum wichtig ist, um in frustrierenden Phasen am Ball zu bleiben. Und Frustration wird es viel geben, wenn man zum ersten Mal programmiert (aber auch danach, nur nimmt das Schritt für Schritt ab).
 
-
 ### Warum Javascript?
 
-Für Neueinsteiger in die Programmierung spielt die verwendte Sprache keine Rolle. Um die Logik der Programmierung kennenzulernen ist sogar sinnvoll, mit einer Pseudo-Programmiersprache zu beginnen (z.B. mit dem [Karel Roboter](https://github.com/fredoverflow/karel)). 
-
+Für Neueinsteiger in die Programmierung spielt die verwendte Sprache keine Rolle. Um die Logik der Programmierung kennenzulernen ist sogar sinnvoll, mit einer Pseudo-Programmiersprache zu beginnen (z.B. mit dem [Karel Roboter](https://github.com/fredoverflow/karel)).
