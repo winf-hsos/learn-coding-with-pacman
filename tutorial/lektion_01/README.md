@@ -1,5 +1,8 @@
 # Lektion 1: Das Projekt aufsetzen
 
+- [Zurück zur Übersicht der Lektionen](../../README.md#die-lektionen)
+- [Zur nächsten Lektion](../lektion_02/README.md)
+
 ## Was brauchen wir?
 
 Bevor wir uns mit den ersten Schritten der Programmierung beschäftigen, müssen wir unsere Programmierumgebung einrichten. Eine Programmierumgebung besteht im Kern aus wenigen Komponenten:
@@ -17,7 +20,7 @@ Wir erstellen in diesem Tutorial ein Pacman-Spiel als Online-Variante, die volls
 2. CSS, um die sichtbaren Elemente zu gestalten (Farbe, Schriftart, Abstände u.v.m).
 3. Javascript, für die Programmierlogik.
 
-Von diesen 3 Sprachen steht in diesem Tutorial **Javascript** im Vordergrund. Javascript ist von den drei genannten Sprachen die einzige *Programmiersprache*. Die anderen beiden Sprachen sind sogenannte *Auszeichnungssprachen*. Das bedeuetet, wir *beschreiben* mit HTML und CSS die Struktur (Bereiche, Überschriften, Absätze), die Inhalte (Textabschnitte, Bilder, Links, Listen) und das Aussehen (Farben, Schriftarten) von Dokumenten (hier: Webseiten). Mit diesen Sprachen lassen sich keine Programme schreiben, die nach einer bestimmten Logik eine Reihe von Befehlen ausführen.
+Von diesen 3 Sprachen steht in diesem Tutorial **Javascript** im Vordergrund. Javascript ist von den drei genannten Sprachen die einzige *Programmiersprache*. Die anderen beiden Sprachen sind sogenannte *Auszeichnungssprachen*. Das bedeuetet, wir *beschreiben* mit HTML und CSS die Struktur (Bereiche, Überschriften, Absätze), die Inhalte (Textabschnitte, Bilder, Links, Listen) und das Aussehen (Farben, Schriftarten) von Dokumenten (hier: Webseiten). Mit diesen Sprachen lassen sich keine Programme schreiben, die nach einer bestimmten Logik eine Reihe von Befehlen ausführen. Das können wir im Browser nur mit Javascript.
 
 ## Die Datei- und Ordnerstruktur
 
@@ -57,3 +60,10 @@ Klickt anschließend auf "OK" und die Dateien für dieses Tutorial werden mit al
 Nach dem Import befindet ihr euch in der Projektansicht. Auf der linken Seite seht ihr die Verzeichnisse und Dateien in eurem Projekt. In der Mitte befindet sich der Code-Editor, in dem ihr Dateien öffnen und bearbeiten könnt. Um das Ergebnis einer bestimmten Lektion zu sehen klickt ihr auf den "Show"-Button und wählt "Next to The Code". Es öffnet sich ein weiterer Bereich am rechten Rand des Bildschirms, in dem eine Vorschau einer HTML-Datei angezeigt werden kann. Um die Vorschau für Lektion 1 zu sehen, müsst ihr euch zunächst durch die Ordnerstruktur klicken. Sobald ihr im Ordner `tutorials/lektion_01` seid, sollte eine Verschau der `index.html`, die sich in diesem Ordner befindet, angezeigt werden.
 
 ![Eine Webseite in Glitch anzeigen](../../resources/images/glitch_preview_website.gif)
+
+### Visual Studio Code
+
+Eine Anleitung für Visual Studio Code folgt bald.
+
+- [Zurück zur Übersicht der Lektionen](../../README.md#die-lektionen)
+- [Zur nächsten Lektion](../lektion_02/README.md)

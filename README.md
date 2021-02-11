@@ -29,4 +29,4 @@ Für Neueinsteiger in die Programmierung spielt die verwendte Sprache so gut wie
 # Die Lektionen
 
 - [Lektion 1: Das Projekt aufsetzen](tutorial/lektion_01/README.md)
-- [Lektion 2: Die Zeichenfläche für unser Spiel erstellen](tutorial/lektion_02/README.md)
+- [Lektion 2: Die Zeichenfläche für das Spiel erstellen](tutorial/lektion_02/README.md)

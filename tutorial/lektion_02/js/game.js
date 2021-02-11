@@ -1,0 +1,1 @@
+console.log("game.js wurde erfolgreich geladen und ausgeführt.");
