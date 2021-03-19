@@ -166,7 +166,7 @@ function drawWalls() {
 
     // Setze die Füllung auf die eben definierte Farbe Blau
     fill(blue);
-
+    
     // Zeichne eine Wand als Rechteck
     rect(width / 2 - 20, 100, 20, height - 200);
 }

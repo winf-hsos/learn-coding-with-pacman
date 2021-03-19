@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Special+Elite&display=swap");
+body {
+    font-family: "Quicksand", Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Special Elite", cursive;
+}
+
+h1 {
+    color: #009ee3;
+}
+
+a:any-link,
+a:hover,
+a:visited {
+    color: #009ee3;
+}
