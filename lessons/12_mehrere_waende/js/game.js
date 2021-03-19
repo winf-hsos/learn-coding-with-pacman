@@ -16,8 +16,8 @@ var pacmanStepSize = 3;
 // Pacmans Größe (Durchmesser in Pixel)
 var pacmanSize = 40;
 
-// Eine globale Variable für unsere Wand
-var wall;
+// Eine globale Variable für die Liste aller Wände
+var walls = []
 
 /* Diese Funktion wird einmal beim Laden der Webseite aufgerufen. */
 function setup() {
@@ -28,13 +28,12 @@ function setup() {
     // Wir wollen die Zeichenfläche an eine bestimmte Stelle im HTML-Baum platzieren
     canvas.parent("canvas");
 
-    // Wir initialisieren unsere einzige Wand als Objekt mit den Koordinaten als Attribute
-    wall = {
-        x: width / 2 - 20,
-        y: 100,
-        width: 20,
-        height: height - 200
+    // Wir initialisieren 3 parallele Wände und fügen sie der globalel Liste hinzu
+    for (var i = width / 4; i < width; i += width / 4) {
+        wall = { x: i, y: 100, width: 20, height: height - 200 }
+        walls.push(wall);
     }
+
 }
 
 /*  Diese Funktion wird pro Sekunde 30 Mal aufgerufen. 
@@ -184,8 +183,11 @@ function drawWalls() {
     // Setze die Füllung auf die eben definierte Farbe Blau
     fill(blue);
 
-    // Zeichne eine Wand als Rechteck und nutze das neue Objekt für die Wand
-    rect(wall.x, wall.y, wall.width, wall.height);
+    for (var i = 0; i < walls.length; i++) {
+        // Zeichne eine Wand als Rechteck und nutze das neue Objekt für die Wand
+        rect(walls[i].x, walls[i].y, walls[i].width, walls[i].height);
+    }
+
 }
 
 /* Diese Funktion prüft, ob es mit der nächsten Bewegung eine Kollision
@@ -211,14 +213,33 @@ function checkCollisions() {
             break;
     }
 
-    // Prüfe, ob die neuen Koordinaten mit der Wand kollidieren würden
-    if (wall.x < pacmanNewX + pacmanSize / 2 &&
-        wall.x + wall.width > pacmanNewX - pacmanSize / 2 &&
-        wall.y < pacmanNewY + pacmanSize / 2 &&
-        wall.y + wall.height > pacmanNewY - pacmanSize / 2) {
+    for (var i = 0; i < walls.length; i++) {
 
-        return true;
+        var wall = walls[i];
+
+        var collides = collidesWith(walls[i], { x: pacmanNewX, y: pacmanNewY, r: pacmanSize / 2 })
+
+        if (collides === true)
+            return true;
+        
     }
 
     return false;
+}
+
+function collidesWith(rect, circle) {
+   
+    var distX = Math.abs(circle.x - rect.x - rect.width / 2);
+    var distY = Math.abs(circle.y - rect.y - rect.height / 2);
+
+    if (distX > (rect.width / 2 + circle.r)) { return false; }
+    if (distY > (rect.height / 2 + circle.r)) { return false; }
+
+    if (distX <= (rect.width / 2)) { return true; }
+    if (distY <= (rect.height / 2)) { return true; }
+
+    var dx = distX - rect.width / 2;
+    var dy = distY - rect.height / 2;
+    return (dx * dx + dy * dy <= (circle.r * circle.r));
+
 }
