@@ -206,40 +206,30 @@ function checkCollisions() {
             pacmanNewX = pacmanX - pacmanStepSize;
             break;
         case "down":
-            pacmanNewY += pacmanY + pacmanStepSize;
+            pacmanNewY = pacmanY + pacmanStepSize;
             break;
         case "up":
             pacmanNewY = pacmanY - pacmanStepSize;
             break;
     }
 
+    // Prüfe für alle Wände in der Liste, ob Kollisionen auftreten
     for (var i = 0; i < walls.length; i++) {
 
         var wall = walls[i];
 
-        var collides = collidesWith(walls[i], { x: pacmanNewX, y: pacmanNewY, r: pacmanSize / 2 })
+        // Prüfe, ob die neuen Koordinaten mit der Wand kollidieren würden
+        if (wall.x < pacmanNewX + pacmanSize / 2 &&
+            wall.x + wall.width > pacmanNewX - pacmanSize / 2 &&
+            wall.y < pacmanNewY + pacmanSize / 2 &&
+            wall.y + wall.height > pacmanNewY - pacmanSize / 2) {
 
-        if (collides === true)
             return true;
-        
+        }
     }
 
+    // Wenn nach der Schleife noch nicht beendet (return) wurde, dann 
+    // gibt es keine Kollisionen
+
     return false;
-}
-
-function collidesWith(rect, circle) {
-   
-    var distX = Math.abs(circle.x - rect.x - rect.width / 2);
-    var distY = Math.abs(circle.y - rect.y - rect.height / 2);
-
-    if (distX > (rect.width / 2 + circle.r)) { return false; }
-    if (distY > (rect.height / 2 + circle.r)) { return false; }
-
-    if (distX <= (rect.width / 2)) { return true; }
-    if (distY <= (rect.height / 2)) { return true; }
-
-    var dx = distX - rect.width / 2;
-    var dy = distY - rect.height / 2;
-    return (dx * dx + dy * dy <= (circle.r * circle.r));
-
 }

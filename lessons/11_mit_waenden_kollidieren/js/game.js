@@ -35,6 +35,7 @@ function setup() {
         width: 20,
         height: height - 200
     }
+
 }
 
 /*  Diese Funktion wird pro Sekunde 30 Mal aufgerufen. 
@@ -61,7 +62,7 @@ function draw() {
     var collides = checkCollisions();
 
     // Bewege Pacman nur, wenn kein Kollision entsteht
-    if (!collides)
+    if (collides === false)
         // Auch die Logik für die Bewegung lagern wir aus
         movePacman();
 }
@@ -204,7 +205,7 @@ function checkCollisions() {
             pacmanNewX = pacmanX - pacmanStepSize;
             break;
         case "down":
-            pacmanNewY += pacmanY + pacmanStepSize;
+            pacmanNewY = pacmanY + pacmanStepSize;
             break;
         case "up":
             pacmanNewY = pacmanY - pacmanStepSize;
