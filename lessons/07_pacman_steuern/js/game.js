@@ -99,4 +99,6 @@ function keyPressed() {
             pacmanDirection = "up";
             break;
     }
+
+    return false;
 }

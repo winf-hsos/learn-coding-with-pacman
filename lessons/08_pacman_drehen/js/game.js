@@ -90,6 +90,8 @@ function keyPressed() {
             pacmanSize -= 1;
             break;    
     }
+
+    return false;
 }
 
 /* Diese Funktion kümmert sich um das korrekte Zeichnen von Pacman
