@@ -19,6 +19,9 @@ var pacmanSize = 40;
 // Eine globale Variable für die Liste aller Wände
 var walls = []
 
+// Eine globale Variable für die Punkte
+var points = [];
+
 /* Diese Funktion wird einmal beim Laden der Webseite aufgerufen. */
 function setup() {
 
@@ -44,6 +47,14 @@ function setup() {
     walls.push(wallBottom);
     walls.push(wallLeft);
     walls.push(wallRight);
+
+    // Wir fügen die Punkte der globalen Liste hinzu
+    for (var i = 120; i < height - 100; i = i + 40) {
+        for (var j = 110; j < width; j += 200) {
+            var p = { x: j, y: i, size: 15 };
+            points.push(p);
+        }
+    }
 }
 
 /*  Diese Funktion wird pro Sekunde 30 Mal aufgerufen. 
@@ -63,12 +74,8 @@ function draw() {
     // Zeichne Wände
     drawWalls();
 
-    // Zeichne Punkte in 4 Reihen mit 40 Pixeln Abstand
-    for (var i = 120; i < height - 100; i = i + 40) {
-        for (var j = 110; j < width; j += 200) {
-            drawPoint(j, i);
-        }
-    }
+    // Zeichne die Punkte
+    drawPoints();
 
     // Wir lagern das Zeichnen von Pacman in eine Funktion aus
     drawPacman();
@@ -206,7 +213,6 @@ function drawWalls() {
         // Zeichne eine Wand als Rechteck und nutze das neue Objekt für die Wand
         rect(walls[i].x, walls[i].y, walls[i].width, walls[i].height);
     }
-
 }
 
 /* Diese Funktion prüft, ob es mit der nächsten Bewegung eine Kollision
@@ -253,11 +259,19 @@ function checkCollisions() {
     return false;
 }
 
-/* Diese Funktion zeichnet einen weißen Punkt */
-function drawPoint(x, y, size = 15) {
-
-    // Zeichne einen weißen Punkt mit Durchmesser "size"
+/* Diese Funktion zeichnet alle Punkte in der globalen Liste */
+function drawPoints() {
     stroke('white');
-    strokeWeight(size);
-    point(x, y);
+
+    for (var i = 0; i < points.length; i++) {
+
+        // Greife auf den aktuellen Punkt zu
+        var p = points[i];
+
+        // Setze die Größe
+        strokeWeight(p.size);
+
+        // Zeichne den Punkt
+        point(p.x, p.y);
+    }
 }
