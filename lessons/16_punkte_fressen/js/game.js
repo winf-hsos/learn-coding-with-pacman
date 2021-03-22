@@ -87,6 +87,8 @@ function draw() {
     if (!collides)
         // Auch die Logik für die Bewegung lagern wir aus
         movePacman();
+
+    checkSwallow();
 }
 
 /*  Diese Funktion wird aufgerufen, wenn eine Taste gedrückt wurde. 
@@ -274,4 +276,37 @@ function drawPoints() {
         // Zeichne den Punkt
         point(p.x, p.y);
     }
+}
+
+/* Diese Funktion prüft, ob Pacman einen Punkt gegessen hat. 
+ * Wenn das der Fall ist wird der Punkt aus der globalen Liste entfernt
+ */
+function checkSwallow() {
+
+    for (var i = 0; i < points.length; i++) {
+        var p = points[i];
+
+        // Wir nehmen 1/3 der Größe, damit der Punkt wirklich geschluckt wurde (und nicht nur gestriffen)
+        var swallowed = objectsCollide(pacmanX, pacmanY, pacmanSize / 3, pacmanSize / 3, p.x, p.y, p.size, p.size);
+
+        if (swallowed === true) {
+
+            // Punkt entfernen
+            points.splice(i, 1);
+        }
+    }
+}
+
+/* Diese Funktion prüft, ob 2 rechteckige Objekte miteinander kollidieren */
+function objectsCollide(aX, aY, aWidth, aHeight, bX, bY, bWidth, bHeight) {
+
+    if (aX < bX + bWidth &&
+        aX + aWidth > bX - bHeight &&
+        aY < bY + bHeight &&
+        aY + aHeight > bY - bHeight) {
+
+        return true;
+    }
+
+    return false;
 }
