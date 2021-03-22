@@ -44,7 +44,6 @@ function setup() {
     walls.push(wallBottom);
     walls.push(wallLeft);
     walls.push(wallRight);
-
 }
 
 /*  Diese Funktion wird pro Sekunde 30 Mal aufgerufen. 
