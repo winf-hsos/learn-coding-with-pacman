@@ -120,7 +120,7 @@ function keyPressed() {
 function drawPacman() {
 
     // Wir setzen die Farbe auf Gelb
-    let yellow = color("yellow");
+    let yellow = color("#FFFF00");
 
     // Setze die Füllung auf die eben definierte Farbe Gelb
     fill(yellow);
@@ -257,7 +257,7 @@ function checkCollisions() {
 function drawPoint(x, y, size = 15) {
 
     // Zeichne einen weißen Punkt mit Durchmesser "size"
-    stroke('white');
+    stroke('#FFFFFF');
     strokeWeight(size);
     point(x, y);
 }
